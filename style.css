@@ -1,0 +1,107 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+/* Контейнер */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Таблица */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+
+/* Сообщение об успешном удалении */
+.success-message {
+    display: none;
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* Стили для кнопок */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/* Кнопка "Добавить" */
+.btn-success {
+    background-color: #1fa43e;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #00f836;
+}
+
+/* Выравнивание кнопки справа */
+.text-end {
+    text-align: right;
+}
+
+/* Кнопка "Редактировать" */
+.btn-warning {
+    background-color: #a7d420;
+    color: #333;
+}
+
+.btn-warning:hover {
+    background-color: #bfff00;
+}
+
+/* Кнопка "Удалить" */
+.btn-danger {
+    background-color: #ab2f3b;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #ea1c30;
+}
+
+/* Иконки в кнопках */
+.btn-sm {
+    display: inline-flex;
+    align-items: center;
+}
