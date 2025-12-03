@@ -1,14 +1,14 @@
 <?php
 //создаем класс
 class User {
-    // Создаем закрытый свойство класса для работы с бд
+    // Создаем закрытый свойство класса для работы с бдыв
     private $db;
-    // Конструктор для создания объектов класса
+    // Конструктор для создания объектов классаыв
     public function __construct($pdo) {
         $this->db = $pdo;
     }
 
-    // Метод для получения списка аккаунтов (с пагинацией)
+    // Метод для получения списка аккаунтов (с пагинацией)ыв
     public function getAccounts($limit, $offset) {
         $stmt = $this->db->prepare("SELECT * FROM accounts LIMIT :limit OFFSET :offset");
         $stmt->bindValue(":limit", $limit, PDO::PARAM_INT);
