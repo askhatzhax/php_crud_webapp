@@ -8,7 +8,7 @@ class User {
         $this->db = $pdo;
     }
 
-    // Метод для получения списка аккаунтов (с пагинацией)ыв
+    // Метод для получения списка аккаунтов (с пагинацией)ывыв
     public function getAccounts($limit, $offset) {
         $stmt = $this->db->prepare("SELECT * FROM accounts LIMIT :limit OFFSET :offset");
         $stmt->bindValue(":limit", $limit, PDO::PARAM_INT);
@@ -17,7 +17,7 @@ class User {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    // Метод для добавления аккаунта
+    // Метод для добавления аккаунтавы
     public function addUser($first_name, $last_name, $email, $company, $position, $phones) {
         $stmt = $this->db->prepare("INSERT INTO accounts (first_name, last_name, email, company_name, position, phone1, phone2, phone3)
                                     VALUES (:first_name, :last_name, :email, :company, :position, :phone1, :phone2, :phone3)");
